@@ -71,11 +71,11 @@ sudo dmesg | head
 
 laporan.md,
 diagram-os.png,
-screenshots-hasil.jpg
+screenshots-hasil.png
 
 4. Commit message yang digunakan. 
 
-update laporan.md
+Update laporan.md
 
 ---
 
@@ -92,6 +92,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Hasil percobaan atau diagram:
+![Screenshot hasil](screenshots/screenshots-hasil.png)
 ![Screenshot hasil](screenshots/diagram-os.png)
 
 
