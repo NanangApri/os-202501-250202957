@@ -1,0 +1,12 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ dmesg | tail -n 10
+[   23.252562] Failed to connect to bus: No such file or directory
+[   23.761241] systemd-journald[68]: Collecting audit messages is disabled.
+[   24.577648] systemd-journald[68]: Received client request to flush runtime journal.
+[   24.718762] systemd-journald[68]: File /var/log/journal/d87e0b3999b449859eb0a3c67a629280/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   29.693315] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   29.825137] WSL (321 - Relay(322)) ERROR: ReceiveMessage:253: ExpectedMessage %u, but socket %s was closed
+[   29.827475] WSL (321 - Relay(322)) ERROR: InitCreateProcessUtilityVm:1969: Failed to write exit status 17
+[   29.828494] WSL (321 - Relay(322)) ERROR: InitCreateProcessUtilityVm:1989: waitpid failed 17
+[   34.960360] systemd-journald[68]: /var/log/journal/d87e0b3999b449859eb0a3c67a629280/user-1000.journal: Journal file uses a different sequence number ID, rotating.
+[   54.803990] hv_balloon: Max. dynamic memory size: 1936 MB
+apriyanto22@DESKTOP-I3OVIBP:~$
