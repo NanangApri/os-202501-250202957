@@ -1,0 +1,22 @@
+5–10 system call pertama yang muncul pada perintah strace ls dan beserta fungsinya:
+
+1. execve()
+   --> Berfungsi untuk menjalankan program baru. Pada tahap ini kernel mulai memproses perintah ls, memuat program ke dalam memori, serta menyiapkan semua hal yang dibutuhkan agar program bisa berjalan, seperti parameter dan lingkungan kerjanya. Setelah itu, proses ls resmi dijalankan oleh sistem.
+2. brk()
+   --> Berfungsi untuk menambah atau mengatur ruang memori yang dipakai oleh program. Kernel menyiapkan area di memori (heap) agar program ls dapat menyimpan data sementara, seperti variabel atau struktur data yang dibutuhkan selama program berjalan.
+3. mmap()
+   --> Berfungsi untuk memetakan file atau data ke dalam memori. Dengan cara ini, program bisa mengakses isi file langsung dari memori tanpa harus membaca dari hard disk berulang kali, sehingga proses menjadi lebih cepat dan efisien.
+4. access()
+   --> Berfungsi untuk memeriksa apakah sebuah file bisa diakses oleh program. Kernel akan mengecek apakah file yang dicari ada, dan apakah program memiliki izin untuk membacanya, menulis, atau menjalankannya. Jika file tidak ditemukan atau tidak memiliki izin, kernel akan memberi tahu program.
+5. openat()
+   --> Berfungsi untuk membuka file atau folder agar dapat digunakan oleh program. Kernel menggunakan system call ini untuk mengakses file penting seperti daftar library sistem yang dibutuhkan agar program dapat berjalan dengan baik.
+6. fstat()
+   --> Berfungsi untuk mengecek informasi detail dari file yang sudah dibuka, seperti ukuran file, jenis file, serta izin aksesnya. Tujuannya agar kernel dapat memastikan bahwa file tersebut valid dan aman untuk dibaca atau digunakan oleh program.
+7. mmap()
+   --> Berfungsi untuk menyalin isi file ke memori agar data bisa dibaca dengan cepat tanpa harus membuka file dari disk berkali-kali. Teknik ini juga membantu menghemat waktu saat program membutuhkan banyak file sistem.
+8. close()
+   --> Berfungsi untuk menutup file yang sudah tidak digunakan lagi. Kernel melakukan ini untuk menghemat sumber daya dan mencegah sistem terlalu banyak file terbuka secara bersamaan.
+9. openat()
+   --> Berfungsi untuk membuka file library sistem. Kernel melakukan ini agar program ls bisa menggunakan fungsi-fungsi yang sudah tersedia di dalam library tanpa harus menulis ulang kode tersebut.
+10. read()
+    --> Berfungsi untuk membaca isi file atau library yang telah dibuka. Kernel memastikan bahwa isi file dapat dibaca dengan benar, misalnya dengan memeriksa format file sebelum digunakan oleh program ls, sehingga program bisa berjalan tanpa error.
