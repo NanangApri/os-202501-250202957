@@ -1,3 +1,15 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffe7d1de580 /* 26 vars */) = 0
+brk(NULL)                               = 0x55a3a7aa5000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1ef1b63000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17607, ...}) = 0
+mmap(NULL, 17607, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1ef1b5e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+
 5–10 system call pertama yang muncul pada perintah strace ls dan beserta fungsinya:
 
 1. execve()
