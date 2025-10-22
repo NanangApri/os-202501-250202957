@@ -33,4 +33,4 @@ read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832
    --> Berfungsi untuk membuka file library sistem. Kernel melakukan ini agar program ls bisa menggunakan fungsi-fungsi yang sudah tersedia di dalam library tanpa harus menulis ulang kode tersebut.
 10. read()
    --> Berfungsi untuk membaca isi file atau library yang telah dibuka. Kernel memastikan bahwa isi file dapat dibaca dengan benar, misalnya dengan memeriksa format file sebelum digunakan oleh program ls, sehingga program bisa berjalan tanpa error.
-    --> Berfungsi untuk membaca isi file atau library yang telah dibuka. Kernel memastikan bahwa isi file dapat dibaca dengan benar, misalnya dengan memeriksa format file sebelum digunakan oleh program ls, sehingga program bisa berjalan tanpa error.
+
