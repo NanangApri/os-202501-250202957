@@ -325,9 +325,25 @@ operable program or batch file.`, karena perintah tersebut bukan bagian dari Win
 
 - Percobaan juga menunjukkan bahwa Linux memberi akses lebih terbuka untuk melihat proses di dalam sistem. Semua perintah berjalan melalui kernel, sehingga pengguna bisa melihat dan mengatur sistem dengan lebih bebas dibandingkan Windows.
 
+---
 ## Tugas
 1. **Tabel Observasi**
-2. **Jelaskan fungsi tiap perintah dan arti kolom permission (rwxr-xr--).**
+
+| No | Perintah yang Dijalankan                                     | Fungsi                                            | Hasil / Output                                                                              | Penjelasan                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                     |
+| -- | ------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | `pwd`                                                        | Menampilkan lokasi folder aktif                   | `/home/apriyanto22`                                                                         | Perintah ini menunjukkan posisi kita/pengguna sedang berada di dalam folder utama pengguna bernama `apriyanto22`. Dengan ini, pengguna tahu posisi dia di direktori tersebut.                                                                 |                                                                                                                                                                                                                                     |
+| 2  | `ls -l`                                                      | Menampilkan isi folder secara detail              | `total 0`                                                                                   | Hasil menunjukkan folder `/home/apriyanto22` masih kosong karena belum ada file atau folder lain di dalamnya. Format detail biasanya menampilkan izin, pemilik, grup, dan ukuran file, tapi karena kosong, hanya muncul tulisan `total 0`. |                                                                                                                                                                                                                                     |
+| 3  | `cd /tmp`                                                    | Berpindah ke folder lain                          | *(tidak ada output)*                                                                        | Perintah ini digunakan untuk berpindah ke direktori `/tmp`, yaitu folder sementara yang digunakan sistem untuk menyimpan file sementara dari berbagai proses.                                                                              |                                                                                                                                                                                                                                     |
+| 4  | `ls -a`                                                      | Menampilkan semua file, termasuk yang tersembunyi | `.  ..  .ICE-unix  .X11-unix  .XIM-unix  .font-unix  snap-private-tmp  systemd-private-...` | Hasil ini menunjukkan bahwa di dalam `/tmp` ada banyak file sistem yang bersifat sementara, termasuk file tersembunyi yang diawali dengan tanda titik (.), misalnya `.ICE-unix` dan `.X11-unix`.                                           |                                                                                                                                                                                                                                     |
+| 5  | `cat /etc/passwd.....`                                        | Menampilkan data pengguna sistem                                                            | `root:x:0:0:root:/root:/bin/bash` dan seterusnya                                                                                                                                                                                           | Perintah ini menampilkan lima baris pertama dari file `/etc/passwd`, yaitu daftar akun pengguna yang ada di sistem Linux. Misalnya akun `root`, `daemon`, dan `bin`, yang masing-masing berfungsi untuk menjalankan layanan sistem. |
+| 6  | `echo "Hello <NANANG APRIYANTO><250202957>" > percobaan.txt` | Membuat file dan menulis teks                     | *(tidak ada output)*                                                                        | Perintah ini membuat file baru bernama `percobaan.txt` dan langsung menuliskan teks “Hello <NANANG APRIYANTO><250202957>” di dalamnya. Jika file sudah ada, isinya akan diganti dengan teks baru.                                          |                                                                                                                                                                                                                                     |
+| 7  | `ls -l percobaan.txt`                                        | Melihat detail file                               | `-rw-r--r-- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt`                        | Hasil menunjukkan file `percobaan.txt` berhasil dibuat. Pemilik (`apriyanto22`) bisa membaca dan menulis file, sementara pengguna lain hanya bisa membacanya.                                                                              |                                                                                                                                                                                                                                     |
+| 8  | `chmod 600 percobaan.txt`                                    | Mengubah izin akses file                          | *(tidak ada output)*                                                                        | Setelah menjalankan perintah ini, izin file berubah sehingga hanya pemilik yang bisa membaca dan menulis file tersebut. Pengguna lain tidak bisa membuka atau mengubah isi file sama sekali.                                               |                                                                                                                                                                                                                                     |
+| 9  | `ls -l percobaan.txt`                                        | Melihat detail file                                | `-rw------- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt`                        | Tampak bahwa izin file sudah berubah menjadi hanya untuk pemilik (`rw-------`). Ini berarti file lebih aman karena tidak bisa diakses oleh orang lain.                                                                                     |                                                                                                                                                                                                                                     |
+| 10 | `sudo chown root percobaan.txt`                              | Mengubah pemilik file                             | *(meminta password sudo)*                                                                   | Dengan perintah ini, file `percobaan.txt` sekarang dimiliki oleh pengguna `root`. Sistem meminta password karena hanya pengguna dengan hak administrator yang boleh mengganti kepemilikan file.                                            |                                                                                                                                                                                                                                     |
+| 11 | `ls -l percobaan.txt`                                        | Melihat detail file                   | `-rw------- 1 root apriyanto22 36 Oct 17 13:59 percobaan.txt`                               | Hasil menunjukkan bahwa pemilik file sekarang `root`, sementara grupnya tetap `apriyanto22`. Artinya, file hanya bisa diakses penuh oleh `root`, dan pengguna biasa tidak lagi bisa membukanya.                                            |                                                                                              
+
+3. **Jelaskan fungsi tiap perintah dan arti kolom permission (rwxr-xr--).**
 - Fungsi tiap perintah pada praktikum minggu ini
 
 
@@ -412,6 +428,8 @@ operable program or batch file.`, karena perintah tersebut bukan bagian dari Win
     4.) Memudahkan manajemen multi-user agar setiap file dikontrol oleh pemilik yang tepat.
 
     **Jadi** dapat disimpulkan bahwa peran chmod dan chown dalam keamanan sistem Linux adalah untuk mengendalikan akses dan kepemilikan file agar sistem tetap aman dan terhindar dari penyalahgunaan.
+
+   ---
 ## Quiz
 1. Apa fungsi dari perintah `chmod`? 
     
@@ -441,14 +459,18 @@ operable program or batch file.`, karena perintah tersebut bukan bagian dari Win
 
 ---
 
----
-
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? Pada saat menjalankan hasil perintah praktikum ini. Di karenakan ada hasil perintah yang tidak saya mengerti.
+- Bagaimana cara Anda mengatasinya? Mencari sumber referensi terkait praktikum ini di Internet di google dan youtube. Kemudian memahami materi praktikum minggu ini. Lalu mengulang praktik lagi terkait praktikum minggu ini sampai paham.
 
 ---
+## F. Referensi
+1. Abraham Silberschatz, Peter Baer Galvin, Greg Gagne. *Operating System Concepts*, 10th Edition, Wiley, 2018.  
+2. Andrew S. Tanenbaum, Herbert Bos. *Modern Operating Systems*, 4th Edition, Pearson, 2015.  
+3. Linux Manual Pages (`man chmod`, `man chown`, `man ls`).  
+4. OSTEP – *Operating Systems: Three Easy Pieces*, 2018.  
 
+---
 **Credit:**  
 _Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
