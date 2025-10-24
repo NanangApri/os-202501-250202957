@@ -462,7 +462,7 @@ operable program or batch file.`, karena perintah tersebut bukan bagian dari Win
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini? Pada saat menjalankan hasil perintah praktikum ini. Di karenakan ada hasil perintah yang tidak saya mengerti.
-- Bagaimana cara Anda mengatasinya? Mencari sumber referensi terkait praktikum ini di Internet di google dan youtube. Kemudian memahami materi praktikum minggu ini. Lalu mengulang praktik lagi terkait praktikum minggu ini sampai paham.
+- Bagaimana cara Anda mengatasinya? Mencari sumber referensi terkait praktikum ini di Internet seperti google dan youtube. Kemudian memahami materi praktikum minggu ini. Lalu mengulang praktik lagi terkait praktikum minggu ini sampai paham.
 
 ---
 ## F. Referensi
