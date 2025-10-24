@@ -1,0 +1,11 @@
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ echo "Hello <NANANG APRIYANTO><250202957>" > percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw-r--r-- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ chmod 600 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw------- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ sudo chown root percobaan.txt
+[sudo] password for apriyanto22:
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw------- 1 root apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$
