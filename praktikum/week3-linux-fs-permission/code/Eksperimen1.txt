@@ -1,0 +1,13 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ pwd
+/home/apriyanto22
+apriyanto22@DESKTOP-I3OVIBP:~$ ls -l
+total 0
+apriyanto22@DESKTOP-I3OVIBP:~$ cd /tmp
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -a
+.           snap-private-tmp
+..          systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-logind.service-sADNWO
+.ICE-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-resolved.service-k0nkpT
+.X11-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-timesyncd.service-HzQAAM
+.XIM-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-wsl-pro.service-QTRwoq
+.font-unix
+apriyanto22@DESKTOP-I3OVIBP:/tmp$
