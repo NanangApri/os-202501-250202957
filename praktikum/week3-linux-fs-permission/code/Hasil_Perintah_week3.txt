@@ -1,0 +1,29 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ pwd
+/home/apriyanto22
+apriyanto22@DESKTOP-I3OVIBP:~$ ls -l
+total 0
+apriyanto22@DESKTOP-I3OVIBP:~$ cd /tmp
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -a
+.           snap-private-tmp
+..          systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-logind.service-sADNWO
+.ICE-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-resolved.service-k0nkpT
+.X11-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-systemd-timesyncd.service-HzQAAM
+.XIM-unix   systemd-private-cd04d465d8e64f9e876d7c518f920543-wsl-pro.service-QTRwoq
+.font-unix
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ cat /etc/passwd | head -n 5
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ echo "Hello <NANANG APRIYANTO><250202957>" > percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw-r--r-- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ chmod 600 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw------- 1 apriyanto22 apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ sudo chown root percobaan.txt
+[sudo] password for apriyanto22:
+apriyanto22@DESKTOP-I3OVIBP:/tmp$ ls -l percobaan.txt
+-rw------- 1 root apriyanto22 36 Oct 17 13:59 percobaan.txt
+apriyanto22@DESKTOP-I3OVIBP:/tmp$
