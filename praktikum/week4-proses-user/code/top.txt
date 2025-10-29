@@ -1,0 +1,32 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ top -n 1
+top - 13:39:50 up 38 min,  1 user,  load average: 0.00, 0.01, 0.00
+Tasks:  23 total,   1 running,  22 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1860.6 total,   1371.4 free,    495.6 used,    136.7 buff/cache
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   1365.1 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21752  13216   9664 S   0.0   0.7   0:10.83 systemd
+      2 root      20   0    2776   1924   1796 S   0.0   0.1   0:00.06 init-systemd(Ub
+      8 root      20   0    2776    132    132 S   0.0   0.0   0:00.01 init
+     68 root      19  -1   75024  19928  18768 S   0.0   1.0   0:05.64 systemd-journal
+    113 root      20   0   23992   6092   4876 S   0.0   0.3   0:03.12 systemd-udevd
+    123 systemd+  20   0   21452  11992   9804 S   0.0   0.6   0:02.77 systemd-resolve
+    124 systemd+  20   0   91020   6544   5700 S   0.0   0.3   0:09.04 systemd-timesyn
+    175 root      20   0    4236   2788   2552 S   0.0   0.1   0:03.29 cron
+    176 message+  20   0    9580   5104   4548 S   0.0   0.3   0:02.33 dbus-daemon
+    197 root      20   0   18140   8820   7772 S   0.0   0.5   0:01.02 systemd-logind
+    203 root      20   0 1829828  16084   9476 S   0.0   0.8   0:04.40 wsl-pro-service
+    213 root      20   0    3160   1192   1108 S   0.0   0.1   0:00.01 agetty
+    216 syslog    20   0  222508   5380   4528 S   0.0   0.3   0:01.82 rsyslogd
+    226 root      20   0    3116   1152   1068 S   0.0   0.1   0:00.01 agetty
+    260 root      20   0  106996  22624  13292 S   0.0   1.2   0:00.21 unattended-upgr
+    323 root      20   0    6692   4804   4024 S   0.0   0.3   0:00.01 login
+    412 apriyan+  20   0   20264  11544   9460 S   0.0   0.6   0:04.02 systemd
+    413 apriyan+  20   0   21140   1720      0 S   0.0   0.1   0:00.00 (sd-pam)
+    429 apriyan+  20   0    6072   5268   3612 S   0.0   0.3   0:00.04 bash
+    506 root      20   0    2784    212     80 S   0.0   0.0   0:00.00 SessionLeader
+    507 root      20   0    2784    216     80 S   0.0   0.0   0:00.20 Relay(511)
+    511 apriyan+  20   0    6304   5560   3668 S   0.0   0.3   0:00.57 bash
+   1131 apriyan+  20   0    9272   5392   3260 R   0.0   0.3   0:00.00 top
+apriyanto22@DESKTOP-I3OVIBP:~$

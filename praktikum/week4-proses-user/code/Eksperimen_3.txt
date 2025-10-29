@@ -1,0 +1,10 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ sleep 1000 &
+[1] 1136
+apriyanto22@DESKTOP-I3OVIBP:~$ ps aux | grep sleep
+apriyan+    1136  0.0  0.0   3124  1104 pts/0    S    13:42   0:00 sleep 1000
+apriyan+    1138  0.0  0.1   4088  2032 pts/0    S+   13:42   0:00 grep --color=auto sleep
+apriyanto22@DESKTOP-I3OVIBP:~$ kill 1136
+apriyanto22@DESKTOP-I3OVIBP:~$ ps aux | grep sleep
+apriyan+    1140  0.0  0.1   4088  1984 pts/0    S+   13:42   0:00 grep --color=auto sleep
+[1]+  Terminated              sleep 1000
+apriyanto22@DESKTOP-I3OVIBP:~$

@@ -1,0 +1,50 @@
+apriyanto22@DESKTOP-I3OVIBP:~$ whoami
+apriyanto22
+apriyanto22@DESKTOP-I3OVIBP:~$ id
+uid=1000(apriyanto22) gid=1000(apriyanto22) groups=1000(apriyanto22),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),107(netdev)
+apriyanto22@DESKTOP-I3OVIBP:~$ groups
+apriyanto22 adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+apriyanto22@DESKTOP-I3OVIBP:~$ sudo adduser praktikan
+info: Adding user `praktikan' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `praktikan' (1001) ...
+info: Adding new user `praktikan' (1001) with group `praktikan (1001)' ...
+warn: The home directory `/home/praktikan' already exists.  Not touching this directory.
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for praktikan
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `praktikan' to supplemental / extra groups `users' ...
+info: Adding user `praktikan' to group `users' ...
+apriyanto22@DESKTOP-I3OVIBP:~$ sudo passwd praktikan
+New password:
+Retype new password:
+passwd: password updated successfully
+apriyanto22@DESKTOP-I3OVIBP:~$ sudo login
+DESKTOP-I3OVIBP login: praktikan
+Password:
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 29 13:36:16 WIB 2025
+
+  System load:  0.08                Processes:             30
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       1
+  Memory usage: 21%                 IPv4 address for eth0: 172.24.211.160
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+praktikan@DESKTOP-I3OVIBP:~$
