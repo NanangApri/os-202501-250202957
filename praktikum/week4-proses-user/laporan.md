@@ -302,7 +302,7 @@ Di Windows, sebagian besar pengelolaan program dan layanan dilakukan melalui ant
 | 11 | `kill 1136`              | -                                                                                                                                                           | Menghentikan proses                                             | Output menunjukkan proses dengan PID 1136 berhasil dihentikan. Artinya perintah `kill` digunakan untuk menghentikan proses tertentu.                                                                   |
 | 12 | `pstree -p ... head -20`   | Struktur pohon proses dengan PID (systemd, bash, agetty, dll.) (Untuk hasil bisa diliat di **Hasil Eksekusi**)                                                                                                                        | Melihat struktur proses                                         | Output memperlihatkan proses yang saling terkait beserta proses PID-nya. Perintah ini berguna untuk memahami bagaimana proses berhubungan satu sama lain.                                                      |
 
----
+
 
 2. Gambarkan hierarki proses dalam bentuk diagram pohon (`pstree`) di laporan.
 ```bash
