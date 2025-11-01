@@ -363,7 +363,7 @@ User management penting untuk menjaga keamanan sistem. Karena setiap orang yang 
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  Pada pstree, saat saya mencoba menjalankan perintah tersebut, terjadi kesalahan.
-- Bagaimana cara Anda mengatasinya?  Menggunakan perangkat lain pada saat. Kemudian mengulang lagi perintah yang dijalankan sampai jadi.
+- Bagaimana cara Anda mengatasinya?  Menggunakan perangkat lain pada saat melakukan praktik. Kemudian mengulang lagi perintah yang dijalankan sampai jadi.
 
 ---
 
