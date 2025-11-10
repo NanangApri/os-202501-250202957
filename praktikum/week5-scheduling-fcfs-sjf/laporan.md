@@ -78,8 +78,8 @@ Tujuan praktikum minggu ini.
    Rata-rata Waiting Time = Total Waiting Time
                             ___________________
                                Jumlah Proses
-   Rata-rata Turnaround Time = Total Waiting Time
-                               __________________
+   Rata-rata Turnaround Time = Total Turnaround Time
+                               ______________________
                                   Jumlah Proses
    ```
 3. File dan kode yang dibuat. 
@@ -101,9 +101,9 @@ Tabel_Skenario-2.png
    Rata-rata Waiting Time = Total Waiting Time
                             ___________________
                                Jumlah Proses
-   Rata-rata Turnaround Time = Total Waiting Time
-                               ___________________
-                                  Jumlah Proses
+   Rata-rata Turnaround Time = Total Turnaround Time
+                               ______________________
+                                   Jumlah Proses
    ```
 
 ---
