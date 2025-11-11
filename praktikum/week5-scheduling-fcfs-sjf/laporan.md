@@ -69,7 +69,8 @@ Tujuan praktikum minggu ini.
 5.) Screenshot hasil perhitungan dan simpan di:
   ```bash
   praktikum/week5-scheduling-fcfs-sjf/screenshots/
-  ``` 
+  ```
+6.) Kemudian melakukan commit dan push ketika sudah selesai.
 
 2. Perintah yang dijalankan.
    ```bash
