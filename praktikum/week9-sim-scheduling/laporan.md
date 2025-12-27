@@ -186,7 +186,7 @@ else:
 ```
 3. File dan kode yang dibuat.  
 
-laporan.md, Hasil_Simulasi_Program.png, Hasil_Simulasi_Manual.png, dataset.csv, Week 9.py
+laporan.md, Hasil_Simulasi_Program.png, Hasil_Simulasi_Manual.png, dataset.csv, scheduling_simulation.py
 
 4. Commit message yang digunakan. --> **Minggu 9 - Simulasi Scheduling CPU**
 
