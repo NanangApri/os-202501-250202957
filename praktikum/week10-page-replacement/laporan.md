@@ -87,7 +87,7 @@ frame_size = 3
 
 
 def print_table(rows, title):
-    line = "-" * 49  # garis pembatas
+    line = "-" * 49 
     print("\n" + title)
     print(line)
     print(f"| {'Step':^6} | {'Page':^6} | {'Frames':^15} | {'Status':^9} |")
@@ -142,7 +142,7 @@ def fifo(pages, frame_size):
 
 def lru(pages, frame_size):
     frames = []         
-    last_used = {}      # menyimpan kapan terakhir halaman dipakai
+    last_used = {}      
     faults = 0
     hits = 0
     rows = []
@@ -157,11 +157,11 @@ def lru(pages, frame_size):
             status = "Fault"
             faults += 1
 
-            # jika frame belum penuh → langsung masuk
+           
             if len(frames) < frame_size:
                 frames.append(page)
 
-            # jika frame penuh → cari halaman yang paling lama tidak dipakai
+            
             else:
                 lru_page = min(last_used, key=last_used.get)  
                 frames[frames.index(lru_page)] = page         
