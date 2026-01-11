@@ -31,7 +31,8 @@ Pembatasan CPU mengatur porsi waktu CPU yang dapat digunakan oleh container, seh
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan. 
+1. Langkah-langkah yang dilakukan.
+    
 1.) **Persiapan Lingkungan**
 
    - Pastikan Docker terpasang dan berjalan.
